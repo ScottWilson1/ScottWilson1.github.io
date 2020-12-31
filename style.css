@@ -1,18 +1,38 @@
 :root {
     --main-color: #ff4d44;
     --secondary-color: #78c7ff;
+    --sky-blue: #D6F5FF;
     --accent-color: yellow;
+    /* --pheasant-blue: #005675; */
+    --pheasant-blue: #00435C;
+    /* --pheasant-red: #FF726B; */
+    --pheasant-red: #FF4238;
+    --pheasant-yellow: #ffe866;
+    --pheasant-yellow-light: #FFF1A3;
+    --pheasant-yellow-light-2: #FFF5BD;
+    --pheasant-brown: #f2871c;
     --header-height: 30px;
+}
+
+html{
+    margin: 0;
+    padding: 0;
 }
 
 body{
     display: flex;
     flex-direction: column;
+    font-family: Hind Siliguri, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     display: flex;
-    flex-direction: row;
+}
+
+header .header-row{
+    display: flex;
     align-items: center;
     position: fixed;
     top: 0;
@@ -20,8 +40,10 @@ header {
     width: 100%;
     height: var(--header-height);
     padding: 5px;
-    background-color: var(--secondary-color);
-    color: var(--main-color);
+    background-color: var(--sky-blue);
+    color: var(--pheasant-red);
+    z-index: 1;
+    box-shadow: 0px 1px 2px #cfcfcf;
 }
 
 .menu-button{
@@ -32,14 +54,14 @@ header h1 {
     margin-left: 8px;
 }
 
-header .side-nav {
+header .nav {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 0px;
     height: 100%;
-    background-color: navy;
+    background-color: var(--pheasant-blue);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 20px;
@@ -47,10 +69,11 @@ header .side-nav {
 
 header li {
     padding: 8px 8px 8px 0px;
+    font-family: Sansita;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 25px;
     transition: 0.3s;
-    color: var(--main-color);
+    color: var(--pheasant-red);
     display: block;
 }
 
@@ -66,4 +89,126 @@ header .close-button {
     right: 20px;
     font-size: 36px;
     margin-bottom: 10px;
+}
+
+header .welcome-section{
+    display: none;
+}
+
+/* This accounts for the height of the header so the internal page links work correclty */
+h2::before {
+    display: block;
+    content: "";
+    margin-top: -10px;
+    height: var(--header-height);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    font-family: Sansita;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.project-tile {
+    background-color: var(--accent-color);
+}
+
+.project-tile h3 {
+    margin-left: 10px;
+}
+
+.project-tile p {
+    margin-left: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.color-compare {
+    height: 25px;
+    width: 150px;
+}
+
+@media only screen and (min-width: 410px) {
+    .project-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    :root {
+        --header-height: 50px;
+    }
+
+    header .header-row {
+        background-color: var(--sky-blue);
+        color: #FF4238;
+    }
+
+    header .menu-button {
+        display: none;
+    }
+
+    header .close-button {
+        display: none;
+    }
+
+    header .header-row h1 {
+        display: none;
+    }
+
+    header .header-row .nav {
+        position: static;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        background-color: var(--sky-blue);
+        margin-top: -50px;
+        margin-left: auto;
+        margin-right: 15px;
+        padding-bottom: 5px;
+        overflow-y: hidden;
+    }
+
+    header li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    header .welcome-section {
+        display: block;
+        height: 100vh;
+        width: 100%;
+        background-color: #00435C;
+    }
+
+    header .welcome-text {
+        color: #FF4238;
+        position: relative;
+        top: 12vh;
+        text-align: center;
+        font-size: 150px;
+    }
+
+    header .welcome-slogan {
+        color: #fffcf0;
+        text-align: center;
+        margin-top: -95px;
+        font-size: 40px;
+    }
 }
