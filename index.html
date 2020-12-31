@@ -3,39 +3,84 @@
 <head>
     <title>That Scott</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Pattaya&family=Hind+Siliguri&family=Sansita&family=Sansita:wght@700&family=Sansita+Swashed&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
     <script type="text/javascript" src="methods.js"></script>
 </head>
 
 <body>
-    <header id="header" class="header-row">
-        <div id="menu-button" class="menu-button" onclick="openNav()">&#9776;</div>   
-        <h1>That Scott</h1>
-        <div id="side-nav" class="side-nav">
-            <div id="close-button" class="close-button" onclick="closeNav()">&times;</div>
-            <nav id="nav">
-                <ul id="nav-links" class="nav-links">
-                    <li><a href="#about" onclick="closeNav()">About</href></li>
-                    <li><a href="#knowledge_share" onclick="closeNav()">Knowledge Share</a></li>
-                    <li><a href="#tool_kit" onclick="closeNav()">Took Kit</a></li>
-                    <li><a href="#projects" onclick="closeNav()">Projects</a></li>
-                </ul>
-            </nav>
+    <header id="header">
+        <div id="header-row" class="header-row">
+            <div id="menu-button" class="menu-button" onclick="openNav()">&#9776;</div>   
+            <h1>That Scott</h1>
+            <div id="side-nav" class="nav">
+                <div id="close-button" class="close-button" onclick="closeNav()">&times;</div>
+                <nav id="nav">
+                    <ul id="nav-links" class="nav-links">
+                        <li><a href="#about" onclick="closeNav()">About</href></li>
+                        <li><a href="#tool-kit" onclick="closeNav()">Tool Kit</a></li>
+                        <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+                        <li><a href="#knowledge-share" onclick="closeNav()">Knowledge Share</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="welcome-section" class="welcome-section">
+            <h1 id="welcome-text" class="welcome-text"><span style="font-family: Pattaya">That</span>
+                <span style="font-family: Sansita Swashed;"> Scott</span>
+            </h1>
+            <h2 id="welcome-slogan" class="welcome-slogan">Simple, Quality-Focused Code</h2>
         </div>
     </header>
 
     <main>
+        <h1 style="margin-top: 50px;"><span style="font-family:Pattaya; font-size:33px;">That</span><span style="font-family:Sansita;"> Scott</span></h1>
+        <h1 style="font-family: Pattaya;">That Scott</h1>
+        <h1 style="font-family: Sansita Swashed;">That Scott</h1>
+        <h1 style="font-family: Sansita;">That Scott</h1>
+        <h1 style="font-family: Amaranth;">That Scott</h1>
+
+        <div class="color-compare" style="background-color: #008075;"></div>
+        <div class="color-compare" style="background-color: #ED0F30;"></div>
+        <div class="color-compare" style="background-color: #D3BC80;"></div>
+        <div class="color-compare" style="background-color: #EC9642;"></div>
+        <div class="color-compare" style="background-color: #ffffff;"></div>
+
+        <div class="color-compare" style="background-color: #008075;"></div>
+        <div class="color-compare" style="background-color: #ED0F30;"></div>
+        <div class="color-compare" style="background-color: #e2ce5a;"></div>
+        <div class="color-compare" style="background-color: #EC9642;"></div>
+        <div class="color-compare" style="background-color: #ffffff;"></div>
+
+        <div class="color-compare" style="background-color: #005875;"></div>
+        <div class="color-compare" style="background-color: #ff5a52;"></div>
+        <div class="color-compare" style="background-color: #ffe866;"></div>
+        <div class="color-compare" style="background-color: #f2871c;"></div>
+        <div class="color-compare" style="background-color: #ffffff;"></div>
+
         <div id="about">
-
+            <h2>About</h2>
         </div>
-        <div id="knowledge_share">
-
-        </div>
-        <div id="tool_kit">
-
+        <div id="tool-kit">
+            <h2>Tool Kit</h2>
         </div>
         <div id="projects">
-
+            <h2>Projects</h2>
+            <div id="project-list" class="project-list">
+                <div id="slurm-project" class="project-tile">
+                    <img id="slurm-image" class="project-image">
+                    <h3>Slurm</h3>
+                    <p id="slurm-description" class="project-description">Slurm slurm slurm</p>
+                    <div id="button-container" class="button-container">
+                        <button id="slurm-learn-more-button" class="learn-more-button" aria-labelledby="learn more about the slurm project">Learn More</button>
+                        <button id="slurm-view-project-button" class="view-project-button" aria-labelledby="view slurm project">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="knowledge-share">
+            <h2>Knowledge Share</h2>
         </div>
 
     </main>
