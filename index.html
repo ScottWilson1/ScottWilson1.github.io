@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>That Scott</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Pattaya&family=Hind+Siliguri&family=Sansita&family=Sansita:wght@700&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700;800;900&family=Hind+Siliguri&family:wght@400;500;600&family=Pattaya&family=Sansita:wght@400;700;800&family=Sansita+Swashed&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
     <script type="text/javascript" src="methods.js"></script>
 </head>
@@ -13,7 +13,7 @@
     <header id="header">
         <div id="header-row" class="header-row">
             <div id="menu-button" class="menu-button" onclick="openNav()">&#9776;</div>   
-            <h1>That Scott</h1>
+            <h1 class="header-title">That <span style="font-family: Sansita; font-weight: 700; letter-spacing: -1px;">Scott</span></h1>
             <div id="side-nav" class="nav">
                 <div id="close-button" class="close-button" onclick="closeNav()">&times;</div>
                 <nav id="nav">
@@ -28,36 +28,18 @@
         </div>
         <div id="welcome-section" class="welcome-section">
             <h1 id="welcome-text" class="welcome-text"><span style="font-family: Pattaya">That</span>
-                <span style="font-family: Sansita Swashed;"> Scott</span>
+                <span style="font-family: Sansita; font-weight: 700; letter-spacing: -3px;"> Scott</span>
             </h1>
             <h2 id="welcome-slogan" class="welcome-slogan">Simple, Quality-Focused Code</h2>
         </div>
     </header>
 
     <main>
-        <h1 style="margin-top: 50px;"><span style="font-family:Pattaya; font-size:33px;">That</span><span style="font-family:Sansita;"> Scott</span></h1>
-        <h1 style="font-family: Pattaya;">That Scott</h1>
-        <h1 style="font-family: Sansita Swashed;">That Scott</h1>
-        <h1 style="font-family: Sansita;">That Scott</h1>
-        <h1 style="font-family: Amaranth;">That Scott</h1>
-
-        <div class="color-compare" style="background-color: #008075;"></div>
-        <div class="color-compare" style="background-color: #ED0F30;"></div>
-        <div class="color-compare" style="background-color: #D3BC80;"></div>
-        <div class="color-compare" style="background-color: #EC9642;"></div>
-        <div class="color-compare" style="background-color: #ffffff;"></div>
-
-        <div class="color-compare" style="background-color: #008075;"></div>
-        <div class="color-compare" style="background-color: #ED0F30;"></div>
-        <div class="color-compare" style="background-color: #e2ce5a;"></div>
-        <div class="color-compare" style="background-color: #EC9642;"></div>
-        <div class="color-compare" style="background-color: #ffffff;"></div>
-
-        <div class="color-compare" style="background-color: #005875;"></div>
-        <div class="color-compare" style="background-color: #ff5a52;"></div>
-        <div class="color-compare" style="background-color: #ffe866;"></div>
-        <div class="color-compare" style="background-color: #f2871c;"></div>
-        <div class="color-compare" style="background-color: #ffffff;"></div>
+        <!-- <div>
+            <p>filler</p>
+        </div> -->
+        <!-- <h1 class="temp-title">That <span style="font-family: Alegreya Sans; font-weight: 700; font-size: 165px; letter-spacing: -5px">Scott</span></h1> -->
+        <!-- <h1 class="temp-title">That <span style="font-family: Sansita; font-weight: 800; letter-spacing: -3px;">Scott</span></h1> -->
 
         <div id="about">
             <h2>About</h2>
@@ -73,8 +55,35 @@
                     <h3>Slurm</h3>
                     <p id="slurm-description" class="project-description">Slurm slurm slurm</p>
                     <div id="button-container" class="button-container">
-                        <button id="slurm-learn-more-button" class="learn-more-button" aria-labelledby="learn more about the slurm project">Learn More</button>
-                        <button id="slurm-view-project-button" class="view-project-button" aria-labelledby="view slurm project">View Project</button>
+                        <button id="slurm-learn-more-button" class="project-button" aria-labelledby="learn more about slurm project">Learn More</button>
+                        <button id="slurm-view-project-button" class="project-button" aria-labelledby="view slurm project">View Project</button>
+                    </div>
+                </div>
+                <div id="cat-survey-project" class="project-tile">
+                    <img id="cat-survey-image" class="project-image">
+                    <h3>Cat Survey</h3>
+                    <p id="cat-survey-description" class="project-description">Slurm slurm slurm</p>
+                    <div id="button-container" class="button-container">
+                        <button id="cat-survey-learn-more-button" class="project-button" aria-labelledby="learn more about cat survey project">Learn More</button>
+                        <button id="slurm-view-project-button" class="project-button" aria-labelledby="view cat survey project">View Project</button>
+                    </div>
+                </div>
+                <div id="jim-henson-project" class="project-tile">
+                    <img id="jim-henson-image" class="project-image">
+                    <h3>Jim Henson</h3>
+                    <p id="jim-henson-description" class="project-description">Slurm slurm slurm</p>
+                    <div id="button-container" class="button-container">
+                        <button id="jim-henson-learn-more-button" class="project-button" aria-labelledby="learn more about jim henson project">Learn More</button>
+                        <button id="jim-henson-view-project-button" class="project-button" aria-labelledby="view jim henson project">View Project</button>
+                    </div>
+                </div>
+                <div id="js-documentation-project" class="project-tile">
+                    <img id="js-documentation-image" class="project-image">
+                    <h3>Javascript Technical Documentation</h3>
+                    <p id="js-documentation-description" class="project-description">Slurm slurm slurm</p>
+                    <div id="button-container" class="button-container">
+                        <button id="js-documentation-learn-more-button" class="project-button" aria-labelledby="learn more about javascript technical documentation project">Learn More</button>
+                        <button id="js-documentation-view-project-button" class="project-button" aria-labelledby="view javascript technical documenation project">View Project</button>
                     </div>
                 </div>
             </div>

@@ -11,8 +11,21 @@
     --pheasant-yellow-light: #FFF1A3;
     --pheasant-yellow-light-2: #FFF5BD;
     --pheasant-brown: #f2871c;
+    /* --egg-green: #a7d38d; */
+    /* --egg-green: #add298; */
+    --egg-green: #bedbad;
     --header-height: 30px;
 }
+
+/* .temp-title {
+    font-family: Pattaya;
+    font-size: 150px;
+    padding-left: 50px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    color: var(--pheasant-red);
+    background-color: var(--pheasant-blue);
+} */
 
 html{
     margin: 0;
@@ -50,8 +63,10 @@ header .header-row{
     font-size: 28px;
 }
 
-header h1 {
+header .header-title {
     margin-left: 8px;
+    /* display: none; */
+    font-family: Pattaya;
 }
 
 header .nav {
@@ -91,11 +106,32 @@ header .close-button {
     margin-bottom: 10px;
 }
 
-header .welcome-section{
-    display: none;
+header .welcome-section {
+    display: block;
+    height: 57vh;
+    width: 100%;
+    background-color: #00435C;
 }
 
-/* This accounts for the height of the header so the internal page links work correclty */
+header .welcome-text {
+    color: #FF4238;
+    position: relative;
+    top: 12vh;
+    text-align: center;
+    margin-left: -1vw;
+    font-size: 20vw;
+    margin-bottom: 40px;
+}
+
+header .welcome-slogan {
+    color: #fffcf0;
+    text-align: center;
+    font-size: 6vw;
+    margin-top: .1em;
+}
+
+/* This accounts for the height of the header
+so the internal page links work correclty */
 h2::before {
     display: block;
     content: "";
@@ -122,7 +158,8 @@ h2 {
 }
 
 .project-tile {
-    background-color: var(--accent-color);
+    background-color: var(--egg-green);
+    margin-bottom: 30px;
 }
 
 .project-tile h3 {
@@ -138,12 +175,38 @@ h2 {
     margin-bottom: 10px;
 }
 
-.color-compare {
-    height: 25px;
-    width: 150px;
+.project-button {
+    color: white;
+    background-color: var(--pheasant-blue);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    height: 35px;
+    width: 110px;
+    margin: 0px 4px 7px;
 }
 
+/* .color-compare {
+    height: 25px;
+    width: 150px;
+} */
+
 @media only screen and (min-width: 410px) {
+    header .welcome-section {
+        height: 68vh;
+    }
+
+    header .welcome-text {
+        font-size: 19vw;
+        margin-bottom: 30px;
+    }
+
+    header .welcome-slogan {
+        font-size: 5vw;
+        margin-top: .2em;
+    }
+
     .project-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -153,11 +216,6 @@ h2 {
 @media only screen and (min-width: 760px) {
     :root {
         --header-height: 50px;
-    }
-
-    header .header-row {
-        background-color: var(--sky-blue);
-        color: #FF4238;
     }
 
     header .menu-button {
@@ -180,35 +238,26 @@ h2 {
         background-color: var(--sky-blue);
         margin-top: -50px;
         margin-left: auto;
-        margin-right: 15px;
+        margin-right: 20px;
         padding-bottom: 5px;
         overflow-y: hidden;
     }
 
     header li {
         display: inline-block;
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     header .welcome-section {
-        display: block;
         height: 100vh;
-        width: 100%;
-        background-color: #00435C;
     }
 
     header .welcome-text {
-        color: #FF4238;
-        position: relative;
-        top: 12vh;
-        text-align: center;
         font-size: 150px;
     }
 
     header .welcome-slogan {
-        color: #fffcf0;
-        text-align: center;
-        margin-top: -95px;
         font-size: 40px;
+        margin-top: -40px;
     }
 }
