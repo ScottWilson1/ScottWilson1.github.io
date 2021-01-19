@@ -3,29 +3,15 @@
     --secondary-color: #78c7ff;
     --sky-blue: #D6F5FF;
     --accent-color: yellow;
-    /* --pheasant-blue: #005675; */
     --pheasant-blue: #00435C;
-    /* --pheasant-red: #FF726B; */
     --pheasant-red: #FF4238;
     --pheasant-yellow: #ffe866;
     --pheasant-yellow-light: #FFF1A3;
     --pheasant-yellow-light-2: #FFF5BD;
     --pheasant-brown: #f2871c;
-    /* --egg-green: #a7d38d; */
-    /* --egg-green: #add298; */
-    --egg-green: #bedbad;
+    --egg-green: #daebd0;
     --header-height: 30px;
 }
-
-/* .temp-title {
-    font-family: Pattaya;
-    font-size: 150px;
-    padding-left: 50px;
-    margin-top: -50px;
-    margin-bottom: -50px;
-    color: var(--pheasant-red);
-    background-color: var(--pheasant-blue);
-} */
 
 html{
     margin: 0;
@@ -64,9 +50,9 @@ header .header-row{
 }
 
 header .header-title {
+    font-family: Pattaya;
     margin-left: 8px;
     /* display: none; */
-    font-family: Pattaya;
 }
 
 header .nav {
@@ -108,12 +94,14 @@ header .close-button {
 
 header .welcome-section {
     display: block;
-    height: 57vh;
+    height: 92vw;
+    max-height: 100vh;
     width: 100%;
     background-color: #00435C;
 }
 
 header .welcome-text {
+    font-family: Pattaya;
     color: #FF4238;
     position: relative;
     top: 12vh;
@@ -121,6 +109,23 @@ header .welcome-text {
     margin-left: -1vw;
     font-size: 20vw;
     margin-bottom: 40px;
+}
+
+header .that-word {
+    animation-name: embiggen-that;
+    animation-delay: .6s;
+    animation-duration: .6s;
+}
+
+@keyframes embiggen-that {
+    0% {font-size: 20vw;}
+    50% {font-size: 21vw;}
+    100% {font-size: 20vw}
+}
+
+header .scott-word {
+    font-family: Sansita;
+    font-weight: 700;
 }
 
 header .welcome-slogan {
@@ -142,64 +147,92 @@ h2::before {
 }
 
 main {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 h2 {
     font-family: Sansita;
+    font-size: 34px;
+}
+
+.tool-kit {
+
+}
+
+.tools-list li {
+    display: inline;
+    margin-right: 10px;
+    list-style-type: none;
 }
 
 .project-list {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .project-tile {
     background-color: var(--egg-green);
     margin-bottom: 30px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.project-contents {
+    margin: 5% 5% 20%;
+}
+
+.project-tile img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
 }
 
 .project-tile h3 {
-    margin-left: 10px;
-}
-
-.project-tile p {
-    margin-left: 10px;
-}
-
-.button-container {
     text-align: center;
-    margin-bottom: 10px;
+    font-size: 26px;
+    font-family: Alegreya Sans;
+    margin: 5px 0px -5px;
 }
 
-.project-button {
+.project-link {
     color: white;
     background-color: var(--pheasant-blue);
     border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 600;
-    height: 35px;
-    width: 110px;
-    margin: 0px 4px 7px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px 0px;
+    font-family: Hind Siliguri;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
 }
 
-/* .color-compare {
-    height: 25px;
-    width: 150px;
-} */
+@media only screen and (min-width: 390px) {
+    .project-tile {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 580px) {
     header .welcome-section {
-        height: 68vh;
     }
 
     header .welcome-text {
         font-size: 19vw;
         margin-bottom: 30px;
+    }
+
+    @keyframes embiggen-that {
+        0% {font-size: 19vw;}
+        50% {font-size: 20vw;}
+        100% {font-size: 19vw}
     }
 
     header .welcome-slogan {
@@ -210,10 +243,17 @@ h2 {
     .project-list {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project-tile {
+        width: 48%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 801px) {
     :root {
         --header-height: 50px;
     }
@@ -256,8 +296,23 @@ h2 {
         font-size: 150px;
     }
 
+    @keyframes embiggen-that {
+        0% {font-size: 150px;}
+        50% {font-size: 165px;}
+        100% {font-size: 150px;}
+    }
+
     header .welcome-slogan {
         font-size: 40px;
         margin-top: -40px;
+    }
+
+    main{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .project-tile {
+        width: 32%;
     }
 }
