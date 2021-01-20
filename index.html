@@ -4,7 +4,7 @@
     <title>That Scott</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700;800;900&family=Hind+Siliguri&family:wght@400;500;600&family=Pattaya&family=Sansita:wght@400;700;800&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700;800;900&family=Hind+Siliguri&family:wght@400;500;600&family=Pattaya&family=Sansita:wght@400;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
     <script type="text/javascript" src="methods.js"></script>
 </head>
@@ -13,7 +13,7 @@
     <header id="header">
         <div id="header-row" class="header-row">
             <div id="menu-button" class="menu-button" onclick="openNav()">&#9776;</div>   
-            <h1 class="header-title">That <span style="font-family: Sansita; font-weight: 700; letter-spacing: -1px;">Scott</span></h1>
+            <h1 class="header-title">That <span style=" letter-spacing: -1px;" class="scott-word">Scott</span></h1>
             <div id="side-nav" class="nav">
                 <div id="close-button" class="close-button" onclick="closeNav()">&times;</div>
                 <nav id="nav">
@@ -27,64 +27,97 @@
             </div>
         </div>
         <div id="welcome-section" class="welcome-section">
-            <h1 id="welcome-text" class="welcome-text"><span style="font-family: Pattaya">That</span>
-                <span style="font-family: Sansita; font-weight: 700; letter-spacing: -3px;"> Scott</span>
+            <h1 id="welcome-text" class="welcome-text"><span class="that-word">That</span>
+                <span style="letter-spacing: -3px;" class="scott-word"> Scott</span>
             </h1>
             <h2 id="welcome-slogan" class="welcome-slogan">Simple, Quality-Focused Code</h2>
         </div>
     </header>
 
     <main>
-        <!-- <div>
-            <p>filler</p>
-        </div> -->
-        <!-- <h1 class="temp-title">That <span style="font-family: Alegreya Sans; font-weight: 700; font-size: 165px; letter-spacing: -5px">Scott</span></h1> -->
-        <!-- <h1 class="temp-title">That <span style="font-family: Sansita; font-weight: 800; letter-spacing: -3px;">Scott</span></h1> -->
-
         <div id="about">
-            <h2>About</h2>
+            <h2>About Me</h2>
         </div>
-        <div id="tool-kit">
+        <div id="tool-kit" class="tool-kit">
             <h2>Tool Kit</h2>
+            <h3 id="languages-heading" class="tool-kit-subheading">Languages</h3>
+            <ul id="languages-list" class="tools-list">
+                <li>Java</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+            </ul>
+            <h3 id="tools-heading" class="tool-kit-subheading">Tools</h3>
+            <ul id="tools-list" class="tools-list">
+                <li>Selenium</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VSCode</li>
+                <li>IntelliJ</li>
+                <li>Charles Proxy</li>
+                <li>Postman</li>
+                <li>Jira</li>
+            </ul>
+            <h3 id="horizon-heading" class="tool-kit-subheading">On the Horizon</h3>
+            <ul id="horizon-list" class="tools-list">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>SQL</li>
+                <li>MobX</li>
+            </ul>
         </div>
         <div id="projects">
             <h2>Projects</h2>
             <div id="project-list" class="project-list">
                 <div id="slurm-project" class="project-tile">
-                    <img id="slurm-image" class="project-image">
-                    <h3>Slurm</h3>
-                    <p id="slurm-description" class="project-description">Slurm slurm slurm</p>
-                    <div id="button-container" class="button-container">
-                        <button id="slurm-learn-more-button" class="project-button" aria-labelledby="learn more about slurm project">Learn More</button>
-                        <button id="slurm-view-project-button" class="project-button" aria-labelledby="view slurm project">View Project</button>
+                    <div id="slurm-contents" class="project-contents">
+                        <img src="images/slurm-screenshot.png" id="slurm-image" class="project-image">
+                        <h3>Slurm Landing Page</h3>
+                        <p id="slurm-description" class="project-description">A product landing page for a fictitious contest from the television show, Futurama.</p>
+                        <ul>
+                            <li>Implements responsive web design</li>
+                            <li>Contains a hidden surprise somewhere on the page (speakers on)</li>
+                            <li>HTML, CSS, & JavaScript</li>
+                        </ul>
                     </div>
+                    <a href="https://thatscott.com/slurm/" id="slurm-view-project-link" class="project-link" aria-labelledby="view slurm project">View Project</a>
                 </div>
                 <div id="cat-survey-project" class="project-tile">
-                    <img id="cat-survey-image" class="project-image">
-                    <h3>Cat Survey</h3>
-                    <p id="cat-survey-description" class="project-description">Slurm slurm slurm</p>
-                    <div id="button-container" class="button-container">
-                        <button id="cat-survey-learn-more-button" class="project-button" aria-labelledby="learn more about cat survey project">Learn More</button>
-                        <button id="slurm-view-project-button" class="project-button" aria-labelledby="view cat survey project">View Project</button>
+                    <div id="cat-survey-contents" class="project-contents">
+                        <img src="images/cat-survey-screenshot.png" id="cat-survey-image" class="project-image">
+                        <h3>Cat Survey</h3>
+                        <p id="cat-survey-description" class="project-description">A very important survey about cats! Implements several kinds of form fields.</p>
+                        <ul>
+                            <li>Custom-styled radio buttons and checkboxes</li>
+                            <li>HTML & CSS</li>
+                        </ul>
                     </div>
+                    <a href="https://thatscott.com/cat-survey/" id="slurm-view-project-link" class="project-link" aria-labelledby="view cat survey project">View Project</a>
                 </div>
                 <div id="jim-henson-project" class="project-tile">
-                    <img id="jim-henson-image" class="project-image">
-                    <h3>Jim Henson</h3>
-                    <p id="jim-henson-description" class="project-description">Slurm slurm slurm</p>
-                    <div id="button-container" class="button-container">
-                        <button id="jim-henson-learn-more-button" class="project-button" aria-labelledby="learn more about jim henson project">Learn More</button>
-                        <button id="jim-henson-view-project-button" class="project-button" aria-labelledby="view jim henson project">View Project</button>
+                    <div id="jim-henson-contents" class="project-contents">
+                        <img src="images/jim-henson-screenshot.png" id="jim-henson-image" class="project-image">
+                        <h3>Jim Henson</h3>
+                        <p id="jim-henson-description" class="project-description">My first webpage! This simple site chronicles the life of Jim Henson, creator of The Muppets.</p>
+                        <ul>
+                            <li>Page title uses an imported font so it’s decorative as well as accessible</li>
+                            <li>Accent colors were inspired by Jim Henson’s characters- Kermit green, Missy Piggy pink, Big Bird yellow, etc.</li>
+                            <li>HTML & CSS</li>
+                        </ul>
                     </div>
+                    <a href="https://thatscott.com/jim-henson/" id="jim-henson-view-project-link" class="project-link" aria-labelledby="view jim henson project">View Project</a>
                 </div>
                 <div id="js-documentation-project" class="project-tile">
-                    <img id="js-documentation-image" class="project-image">
-                    <h3>Javascript Technical Documentation</h3>
-                    <p id="js-documentation-description" class="project-description">Slurm slurm slurm</p>
-                    <div id="button-container" class="button-container">
-                        <button id="js-documentation-learn-more-button" class="project-button" aria-labelledby="learn more about javascript technical documentation project">Learn More</button>
-                        <button id="js-documentation-view-project-button" class="project-button" aria-labelledby="view javascript technical documenation project">View Project</button>
+                    <div id="js-contents" class="project-contents">
+                        <img src="images/js-documentation-screenshot.png" id="js-documentation-image" class="project-image">
+                        <h3>JavaScript Technical Documentation</h3>
+                        <p id="js-documentation-description" class="project-description">A technical documentation site for the JavaScript programming language, based on information provided by Mozilla.</p>
+                        <ul>
+                            <li>Minimal styling to emphasize the technical page contents</li>
+                            <li>Implements responsive web design</li>
+                            <li>HTML, CSS, & Javascript</li>
+                        </ul>
                     </div>
+                    <a href="https://thatscott.com/js-documentation/" id="js-documentation-view-project-link" class="project-link" aria-labelledby="view javascript technical documenation project">View Project</a>
                 </div>
             </div>
         </div>
