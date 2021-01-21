@@ -12,18 +12,20 @@
 <body>
     <header id="header">
         <div id="header-row" class="header-row">
-            <div id="menu-button" class="menu-button" onclick="openNav()">&#9776;</div>   
-            <h1 class="header-title">That <span style=" letter-spacing: -1px;" class="scott-word">Scott</span></h1>
-            <div id="side-nav" class="nav">
-                <div id="close-button" class="close-button" onclick="closeNav()">&times;</div>
-                <nav id="nav">
-                    <ul id="nav-links" class="nav-links">
-                        <li><a href="#about" onclick="closeNav()">About</href></li>
-                        <li><a href="#tool-kit" onclick="closeNav()">Tool Kit</a></li>
-                        <li><a href="#projects" onclick="closeNav()">Projects</a></li>
-                        <li><a href="#knowledge-share" onclick="closeNav()">Knowledge Share</a></li>
-                    </ul>
-                </nav>
+            <div id="header-row-contents" class="header-row-contents">
+                <div id="menu-button" class="menu-button" onclick="openNav()">&#9776;</div>   
+                <h1 class="header-title">That <span style=" letter-spacing: -1px;" class="scott-word">Scott</span></h1>
+                <div id="side-nav" class="nav">
+                    <div id="close-button" class="close-button" onclick="closeNav()">&times;</div>
+                    <nav id="nav">
+                        <ul id="nav-links" class="nav-links">
+                            <li><a href="#about" onclick="closeNav()">About</href></li>
+                            <li><a href="#tool-kit" onclick="closeNav()">Tool Kit</a></li>
+                            <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+                            <li><a href="#blogs" onclick="closeNav()">Blogs</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
         <div id="welcome-section" class="welcome-section">
@@ -121,14 +123,19 @@
                 </div>
             </div>
         </div>
-        <div id="knowledge-share">
-            <h2>Knowledge Share</h2>
+        <div id="blogs">
+            <h2>Blog Articles</h2>
+            <a href="https://www.detroitlabs.com/blog/2017/06/14/qa-owns-main-new-merging-strategy-for-higher-quality/" id="qa-owns-main-link" class="blog-link">QA Owns Main: A New Merging Strategy for Higher Quality</a>
+            <a href="https://www.detroitlabs.com/blog/2016/07/27/2016-7-19-how-detroit-labs-integrates-qa-into-agile-teams-part-1/" id="integrating-qa-1-link" class="blog-link">How We Integrate QA into Agile Teams: Part 1</a>
+            <a href="https://www.detroitlabs.com/blog/2016/08/04/2016-7-19-how-dl-integrates-qa-into-agile-teams-part-ii/" id="integrating-qa-2-link" class="blog-link">How We Integrate QA into Agile Teams: Part 2</a>
         </div>
 
     </main>
 
     <footer>
-
+        <div id="footer-contents" class="footer-contents">
+            
+        </div>
     </footer>
 </body>
 </html>
