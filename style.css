@@ -1,15 +1,14 @@
 :root {
-    --main-color: #ff4d44;
-    --secondary-color: #78c7ff;
     --sky-blue: #D6F5FF;
-    --accent-color: yellow;
     --pheasant-blue: #00435C;
     --pheasant-red: #FF4238;
     --pheasant-yellow: #ffe866;
     --pheasant-yellow-light: #FFF1A3;
     --pheasant-yellow-light-2: #FFF5BD;
-    --pheasant-brown: #f2871c;
+    --pheasant-orange: #f2871c;
     --egg-green: #e3f0db;
+    --dark-gray: #A9A9A9;
+    --gray: #C0C0C0;
     --light-gray: #f7f7f7;
     --header-height: 40px;
 }
@@ -168,9 +167,56 @@ h2 {
 }
 
 .tools-list li {
-    display: inline;
+    display: inline-block;
     margin-right: 10px;
     list-style-type: none;
+    text-align: center;
+}
+
+.tool-container {
+    position: relative;
+    height: 110px;
+    width: 110px;
+    border-radius: 50% 20%;
+}
+
+.tool-container .inner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    display: block;
+    background-color: white;
+}
+
+.tool-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 55px;
+    width: 55px;
+    background-color: white;
+}
+
+.red {
+    background-color: var(--pheasant-red);
+}
+
+.yellow {
+    background-color: var(--pheasant-yellow);
+}
+
+.orange {
+    background-color: var(--pheasant-orange);
+}
+
+.gray {
+    background-color: var(--pheasant-blue);
 }
 
 .project-list {
@@ -179,7 +225,7 @@ h2 {
 }
 
 .project-tile {
-    background-color: var(--egg-green);
+    background-color: #e8e8e8;
     margin-bottom: 30px;
     width: 100%;
     border-radius: 5px;
@@ -205,7 +251,7 @@ h2 {
 
 .project-link {
     color: white;
-    background-color: var(--pheasant-blue);
+    background-color: var(--pheasant-red);
     border: none;
     border-radius: 0px 0px 5px 5px;
     padding: 5px 0px;
