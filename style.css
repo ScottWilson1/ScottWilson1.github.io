@@ -2,6 +2,7 @@
     --sky-blue: #D6F5FF;
     --pheasant-blue: #00435C;
     --pheasant-red: #FF4238;
+    --pheasant-red-dark: #d60b00;
     --pheasant-yellow: #ffe866;
     --pheasant-yellow-light: #FFF1A3;
     --pheasant-yellow-light-2: #FFF5BD;
@@ -21,6 +22,11 @@ html{
 a {
     color: var(--pheasant-red);
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--pheasant-red-dark);
+    text-decoration: underline;
 }
 
 body{
@@ -139,6 +145,7 @@ header .welcome-slogan {
     text-align: center;
     font-size: 6vw;
     margin-top: .1em;
+    display: none;
 }
 
 /* This accounts for the height of the header
@@ -159,7 +166,7 @@ main {
 
 h2 {
     font-family: Sansita;
-    font-size: 40px;
+    font-size: 44px;
     text-align: center;
 }
 
@@ -261,7 +268,7 @@ h3 {
     margin: 10px 0px -8px;
 }
 
-.project-link {
+.project-tile a {
     color: white;
     background-color: var(--pheasant-red);
     border: none;
@@ -277,11 +284,52 @@ h3 {
     bottom: 0px;
 }
 
+.project-tile a:hover {
+    color: white;
+    background-color: var(--pheasant-red-dark);
+}
+
+.blog-section {
+    margin-bottom: 70px;
+}
+
 .blog-link {
     display: block;
-    font-size: 20px;
+    font-size: 23px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+footer {
+    background-color: var(--pheasant-blue);
+    background-image: linear-gradient(#003142 15%, var(--pheasant-blue));
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+footer ul {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 40px;
+    list-style-type: none;
+    font-size: 40px;
+
+}
+
+footer a {
+    color: var(--sky-blue);
+}
+
+footer a:hover {
+    color: #94E4FF;
 }
 
 @media only screen and (min-width: 390px) {
