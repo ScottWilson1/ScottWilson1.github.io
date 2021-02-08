@@ -187,6 +187,10 @@ h3 {
     margin-bottom: 20px;
 }
 
+.about-description {
+    font-size: 17px;
+}
+
 .tools-list {
     margin: 0px;
     padding: 0px;
@@ -362,9 +366,6 @@ footer a:hover {
 }
 
 @media only screen and (min-width: 580px) {
-    header .welcome-section {
-    }
-
     header .welcome-text {
         font-size: 19vw;
         margin-bottom: -60px;
@@ -378,6 +379,11 @@ footer a:hover {
 
     header .welcome-slogan {
         font-size: 5vw;
+    }
+
+    .about-description {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .project-list {
@@ -396,6 +402,10 @@ footer a:hover {
 @media only screen and (min-width: 750px) {
     header .welcome-text {
         margin-bottom: -70px;
+    }
+
+    .about-description {
+        font-size: 18px;
     }
 
     .project-list {
@@ -471,6 +481,10 @@ footer a:hover {
         font-size: 26px;
     }
 
+    .about-description {
+        font-size: 19px;
+    }
+
     .tools-list li {
         font-size: 20px;
         margin-right: 15px;
@@ -509,7 +523,7 @@ footer a:hover {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1020px) {
     header .header-row-contents {
         width: 1000px;
         margin-left: auto;
@@ -520,6 +534,10 @@ footer a:hover {
         width: 990px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .about-description {
+        font-size: 20px;
     }
 
     .blog-section a {
