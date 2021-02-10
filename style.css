@@ -177,10 +177,6 @@ h2 {
     text-align: center;
 }
 
-.tool-kit {
-
-}
-
 h3 {
     font-size: 24px;
     font-family: Alegreya Sans;
@@ -189,6 +185,21 @@ h3 {
 
 .about-description {
     font-size: 17px;
+    font-weight: 600;
+    /* color: var(--pheasant-blue); */
+    /* background-color: var(--pheasant-yellow-light-2); */
+    /* background-color: var(--sky-blue); */
+    background-color: #ededed;
+    /* background-color: var(--egg-green); */
+    padding: 30px 60px;
+    border-radius: 70px 20px;
+}
+
+.red-text {
+    color: var(--pheasant-red);
+    font-family: Pattaya;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .tools-list {
@@ -537,7 +548,7 @@ footer a:hover {
     }
 
     .about-description {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .blog-section a {
