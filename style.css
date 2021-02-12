@@ -9,7 +9,7 @@
     --pheasant-orange: #f2871c;
     --egg-green: #e3f0db;
     --dark-gray: #A9A9A9;
-    --gray: #C0C0C0;
+    --gray: #e8e8e8;
     --light-gray: #f7f7f7;
     --header-height: 40px;
 }
@@ -184,21 +184,17 @@ h3 {
 }
 
 .about-description {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
-    /* color: var(--pheasant-blue); */
-    /* background-color: var(--pheasant-yellow-light-2); */
-    /* background-color: var(--sky-blue); */
-    background-color: #ededed;
-    /* background-color: var(--egg-green); */
-    padding: 30px 60px;
-    border-radius: 70px 20px;
+    background-color: var(--gray);
+    padding: 5px 15px;
+    border-radius: 40px 20px;
 }
 
 .red-text {
     color: var(--pheasant-red);
     font-family: Pattaya;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -258,7 +254,7 @@ h3 {
     background-color: var(--pheasant-orange);
 }
 
-.gray {
+.blue {
     background-color: var(--pheasant-blue);
 }
 
@@ -268,7 +264,7 @@ h3 {
 }
 
 .project-tile {
-    background-color: #e8e8e8;
+    background-color: var(--gray);
     margin-bottom: 30px;
     width: 100%;
     margin-left: auto;
@@ -281,18 +277,23 @@ h3 {
     margin: 5% 5% 20%;
 }
 
+.project-contents a:hover {
+    background-color: none;
+}
+
 .project-tile img {
     width: 100%;
     height: auto;
     border-radius: 6px;
 }
 
+
 .project-tile h3 {
     text-align: center;
     margin: 10px 0px -8px;
 }
 
-.project-tile a {
+.project-tile .project-link {
     color: white;
     background-color: var(--pheasant-red);
     border: none;
@@ -308,7 +309,7 @@ h3 {
     bottom: 0px;
 }
 
-.project-tile a:hover {
+.project-tile .project-link a:hover {
     color: white;
     background-color: var(--pheasant-red-dark);
 }
@@ -395,6 +396,8 @@ footer a:hover {
     .about-description {
         margin-left: 10%;
         margin-right: 10%;
+        padding: 10px 25px;
+        border-radius: 50px 20px;
     }
 
     .project-list {
@@ -417,6 +420,12 @@ footer a:hover {
 
     .about-description {
         font-size: 18px;
+        padding: 10px 35px;
+        border-radius: 60px 20px;
+    }
+
+    .red-text {
+        font-size: 21px;
     }
 
     .project-list {
@@ -494,6 +503,11 @@ footer a:hover {
 
     .about-description {
         font-size: 19px;
+        padding: 15px 40px;
+    }
+
+    .red-text {
+        font-size: 22px;
     }
 
     .tools-list li {
@@ -534,7 +548,7 @@ footer a:hover {
     }
 }
 
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1060px) {
     header .header-row-contents {
         width: 1000px;
         margin-left: auto;
@@ -548,7 +562,7 @@ footer a:hover {
     }
 
     .about-description {
-        font-size: 19px;
+        padding: 20px 50px;
     }
 
     .blog-section a {
