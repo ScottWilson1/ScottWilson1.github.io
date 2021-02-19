@@ -287,7 +287,6 @@ h3 {
     border-radius: 6px;
 }
 
-
 .project-tile h3 {
     text-align: center;
     margin: 10px 0px -8px;
@@ -309,7 +308,7 @@ h3 {
     bottom: 0px;
 }
 
-.project-tile .project-link a:hover {
+.project-link-container a:hover {
     color: white;
     background-color: var(--pheasant-red-dark);
 }
