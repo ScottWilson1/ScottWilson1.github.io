@@ -1,6 +1,7 @@
 :root {
     --sky-blue: #D6F5FF;
     --pheasant-blue: #00435C;
+    --pheasant-blue-dark: #003142;
     --pheasant-red: #FF4238;
     --pheasant-red-dark: #d60b00;
     --pheasant-yellow: #ffe866;
@@ -8,13 +9,12 @@
     --pheasant-yellow-light-2: #FFF5BD;
     --pheasant-orange: #f2871c;
     --egg-green: #e3f0db;
-    --dark-gray: #A9A9A9;
     --gray: #e8e8e8;
     --light-gray: #f7f7f7;
     --header-height: 40px;
 }
 
-html{
+html {
     margin: 0;
     padding: 0;
 }
@@ -29,7 +29,7 @@ a:hover {
     text-decoration: underline;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     font-family: Hind Siliguri, Arial, sans-serif;
@@ -58,7 +58,7 @@ header .header-row-contents {
     color: var(--pheasant-red);
 }
 
-.menu-button{
+.menu-button {
     font-size: 28px;
     padding-left: 10px;
 }
@@ -66,7 +66,6 @@ header .header-row-contents {
 header .header-title {
     font-family: Pattaya;
     margin-left: 10px;
-    /* display: none; */
 }
 
 header .nav {
@@ -91,7 +90,6 @@ header li {
 }
 
 header a {
-    color: var(--main-color);
     text-decoration: none;
     white-space: nowrap;
 }
@@ -283,7 +281,6 @@ h3 {
 
 .project-tile img {
     width: 100%;
-    height: auto;
     border-radius: 6px;
 }
 
@@ -295,7 +292,6 @@ h3 {
 .project-tile .project-link {
     color: white;
     background-color: var(--pheasant-red);
-    border: none;
     border-radius: 0px 0px 5px 5px;
     padding: 5px 0px;
     font-family: Hind Siliguri;
@@ -326,7 +322,7 @@ h3 {
 
 footer {
     background-color: var(--pheasant-blue);
-    background-image: linear-gradient(#003142 15%, var(--pheasant-blue));
+    background-image: linear-gradient(var(--pheasant-blue-dark) 15%, var(--pheasant-blue));
     width: 100%;
     height: 120px;
     position: relative;
@@ -520,8 +516,8 @@ footer a:hover {
     }
 
     .tool-container .inner-container {
-        width: 85px;
         height: 85px;
+        width: 85px;
     }
 
     .tool-container img {
